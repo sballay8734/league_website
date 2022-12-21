@@ -1,5 +1,17 @@
-if (typeof window !== 'undefined') {
-  console.log('You are on the browser,You are good to go')
-  } else {
-  console.log('You are on the server,Cannot execute')
- }
+const { Client } = require('espn-fantasy-football-api/node');
+const { Team } = require('espn-fantasy-football-api/node');
+const { BoxScore } = require('espn-fantasy-football-api/node');
+const { BaseObject } = require('espn-fantasy-football-api/node');
+
+const leagueId = 1049926;
+
+
+
+
+
+
+
+
+const myClient = new Client({ leagueId: 1049926 });
+myClient.getLeagueInfo({seasonId: 2022})
+.then((data => console.log(data)))
