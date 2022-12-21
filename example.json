@@ -1,0 +1,55 @@
+{
+  "results": [
+    {
+      "managerName": "don irons",
+      "teamId": 1,
+      "statsUrl": "https://leagueapi.com/api/teams/1"
+    },
+    {},
+    {},
+    {
+      "managerName": "Jimmy Wagner",
+      "teamId": 16, 
+      "statsUrl": "https://leagueapi.com/api/teams/16"
+    }
+  ]
+}
+
+// for each manager
+{
+  // master stats
+  "careerTotalPF": 12983,
+  "careerTotalPA": 12849,
+  "totalSeasons": 8,
+  "playoffAppearances": 4,
+  ".....": 00000,
+
+  "seasonsUrl": "https://leagueapi.com/api/teams/1/seasons"
+}
+
+// for each season (see seasonUrl above)
+{
+  [
+    "2015": 
+      {
+        "seasonTotalPF": 1782,
+        "seasonTotalPA": 1598,
+        "madePlayoffs": true,
+        "....": 0000,
+      },
+    "2016":
+    {
+      "seasonTotalPF": 1873,
+      "seasonTotalPA": 1618,
+      "madePlayoffs": false,
+      "....": 0000,
+    },
+    "2017":
+    {
+      "seasonTotalPF": 1455,
+      "seasonTotalPA": 1566,
+      "madePlayoffs": false,
+      "....": 0000,
+    },
+  ]
+}

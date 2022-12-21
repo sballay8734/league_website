@@ -1,3 +1,6 @@
+// https://pokeapi.co/api/v2/pokemon -- EXAMPLE
+// Your end point would look something like -- leagueapi.co/api/teams
+
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 let leagueMembers = {
   teamOne: 
