@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+
+.navbar-toggler {
+  outline: none;
+  border: none;
+}
+
+.hero {
+  height: calc(100% - 56px);
+}
+
+.profile {
+  border: .2rem solid black;
+  height: 150px;
+  border-radius: .5rem;
+  align-items: center;
+}
+
+.img-fluid {
+  height: 100px;
+  width: 100px;
+  justify-self: center;
+}
