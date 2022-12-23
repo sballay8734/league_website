@@ -29,7 +29,9 @@ body {
 /* Profile Card */
 .profile {
   border: .2rem solid black;
-  height: 150px;
+  background-color: rgb(225, 225, 225);
+  min-height: 150px;
+  padding: .8rem;
   border-radius: .5rem;
   align-items: center;
   max-width: 426px;
@@ -46,6 +48,27 @@ body {
 .profile-img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 100%;
+  border: 3px solid black;
+  height: auto;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-label {
+  font-size: 10px;
+  width: 80px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  top: 68px;
+
 }
 
 .stats {
@@ -63,7 +86,7 @@ body {
 
 .spacer {
   border: 1px solid rgb(210, 210, 210);
-  height: 50px;
+  height: 70px;
   align-self: center;
 }
 
@@ -71,6 +94,7 @@ body {
   border: 2px solid black;
   border-radius: 1rem;
   width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .button-spacer {
@@ -98,4 +122,14 @@ body {
   border: none;
   outline: none;
   opacity: 60%;
+}
+
+.stats-left,
+.stats-right {
+  font-size: 12px;
+}
+
+.stat {
+  font-weight: bold;
+  font-style: italic;
 }
