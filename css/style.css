@@ -1,6 +1,7 @@
 html,
 body {
-  height: 100%;
+  height: auto;
+  background-color: rgb(249, 239, 226);
 }
 
 .navbar-toggler {
@@ -12,15 +13,89 @@ body {
   height: calc(100% - 56px);
 }
 
+.card-container-wrapper {
+  width: 100%;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.card-container:first-child {
+  margin-top: 1rem;
+}
+
+/* Profile Card */
 .profile {
   border: .2rem solid black;
   height: 150px;
   border-radius: .5rem;
   align-items: center;
+  max-width: 426px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 426px;
 }
 
 .img-fluid {
   height: 100px;
   width: 100px;
   justify-self: center;
+}
+
+.profile-img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 100%;
+}
+
+.stats {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.stats-wrapper {
+  text-align: left;
+  background-color: azure;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 90%;
+}
+
+.spacer {
+  border: 1px solid rgb(210, 210, 210);
+  height: 50px;
+  align-self: center;
+}
+
+.button-wrapper {
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 80%;
+}
+
+.button-spacer {
+  border: 1px solid rgb(227, 227, 227);
+  height: 15px;
+}
+
+.all-time,
+.current-season {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  font-weight: bold;
+  transition: opacity .1s;
+}
+
+.all-time:hover,
+.current-season:hover {
+  text-decoration: underline;
+}
+
+.all-time:active,
+.current-season:active {
+  border: none;
+  outline: none;
+  opacity: 60%;
 }
