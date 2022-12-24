@@ -56,7 +56,7 @@ body {
   position: relative;
 }
 
-.img-label {
+/* .img-label {
   font-size: 10px;
   width: 80px;
   margin: 0;
@@ -69,7 +69,7 @@ body {
   position: absolute;
   top: 68px;
 
-}
+} */
 
 .stats {
   width: 100%;
@@ -84,6 +84,12 @@ body {
 .spacer {
   border: 1px solid rgb(210, 210, 210);
   height: 70px;
+  align-self: center;
+}
+
+.spacer-nav {
+  border: 1px solid rgb(212, 212, 212);
+  height: 25px;
   align-self: center;
 }
 
@@ -121,14 +127,23 @@ body {
   opacity: 60%;
 }
 
-.stats-left,
+/* .stats-left,
 .stats-right {
-  font-size: 12px;
-}
+  font-size: 1rem;
+} */
 
 .stat {
   font-weight: bold;
   /* font-style: italic; */
+}
+
+.card-toggle {
+  font-size: .6rem;
+}
+
+.stats-dropdown-btn {
+  font-size: .6rem;
+  width: 95%;
 }
 
 /* ************************************************************************* */
@@ -161,6 +176,10 @@ body{
   background-clip: border-box;
   border: 1px solid #e6e4e9;
   border-radius: 8px;
+}
+
+.card-header {
+  width: 100%;
 }
 
 .card .card-header.no-border {
@@ -416,17 +435,17 @@ margin-left: 1rem;
 
 .widget-49 .widget-49-title-wrapper .widget-49-meeting-info .widget-49-pro-title {
 color: #3c4142;
-font-size: 14px;
+font-size: .9rem;
 }
 
 .widget-49 .widget-49-title-wrapper .widget-49-meeting-info .widget-49-meeting-time {
 color: #B1BAC5;
-font-size: 13px;
+font-size: .7rem;
 }
 
 .widget-49 .widget-49-meeting-points {
 font-weight: 400;
-font-size: 13px;
+font-size: .8rem;
 margin-top: .5rem;
 list-style-type: none;
 margin: 0;
@@ -436,6 +455,7 @@ padding: 0;
 .widget-49 .widget-49-meeting-points .widget-49-meeting-item {
 display: list-item;
 color: #727686;
+/* font-size: 10px; */
 }
 
 .widget-49-meeting-item:not(:first-child) {
@@ -454,4 +474,36 @@ text-transform: uppercase;
 
 .championships {
   color: rgb(206, 175, 0);
+}
+
+@media(min-width: 768px) {
+  .widget-49-meeting-item {
+    font-size: .6rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .widget-49-meeting-item {
+    font-size: .8rem;
+  }
+}
+
+@media(max-width: 449px) {
+  html {
+    font-size: .8rem;
+  }
+  .img-fluid {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media(max-width: 330px) {
+  html {
+    font-size: .6rem;
+  }
+  .img-fluid {
+    height: 40px;
+    width: 40px;
+  }
 }

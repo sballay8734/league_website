@@ -20,19 +20,22 @@
       </button>
       <!-- Navbar Supported Content -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-0 gap-4 fw-semibold">
-          <li class="nav-item mt-3 mt-md-0">
+        <ul class="navbar-nav ms-auto mb-0 gap-2">
+          <!-- <li class="nav-item mt-3 mt-md-0">
             <a href="#" class="nav-link active" aria-current="page">Home</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link">King of the Hill</a>
           </li>
+          <div class="spacer-nav"></div>
           <li class="nav-item">
             <a href="#" class="nav-link">Luck Calculator</a>
           </li>
+          <div class="spacer-nav"></div>
           <li class="nav-item">
             <a href="#" class="nav-link">Hall of Fame</a>
           </li>
+          <div class="spacer-nav"></div>
           <li class="nav-item">
             <a href="#" class="nav-link">Hall of Shame</a>
           </li>
@@ -45,11 +48,15 @@
   <section class="hero d-flex">
     <div class="container">
       <div class="row">
-        <!-- WORKING ON STATS BREAKDOWN -->
+        <!-- Card 1 Dan George -->
         <div class="col-md-6 col-lg-6 col-xxl-4 mt-4 d-flex justify-content-center">
           <div class="card card-margin">
-            <div class="card-header no-border">
-              <h5 class="card-title">Dan George</h5>
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Dan George</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
             </div>
             <div class="card-body pt-0 pb-1">
               <div class="widget-49">
@@ -58,36 +65,36 @@
                     <span><img src="img/man.png" alt="" class="img-fluid"></span>
                   </div>
                   <div class="widget-49-meeting-info">
-                    <span class="widget-49-pro-title">Seasons: <span class="stat seasons">10</span></span>
-                    <span class="widget-49-meeting-time">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
                   </div>
                   <div class="widget-49-meeting-info">
-                    <span class="widget-49-pro-title">Championships: <span class="stat championships">3</span></span>
-                    <span class="widget-49-meeting-time">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
                   </div>
                 </div>
                 <div class="stats-wrapper">
-                  <ol class="widget-49-meeting-points mt-3">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
                     <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
                     <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
                     <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
                     <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
                   </ol>
-                  <ol class="widget-49-meeting-points mt-3 ms-4">
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
                     <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
                     <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
                     <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
                     <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
                   </ol>
-                  <ol class="widget-49-meeting-points mt-3 ms-4">
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
                     <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
                     <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
                     <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
                     <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
                   </ol>
                 </div>
-                <div class="show-all text-center">
-                  <button class="btn m-0 p-0">Stats Breakdown</button>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
                 </div>
                 <!-- <div class="widget-49-meeting-action">
                               <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
@@ -96,10 +103,15 @@
             </div>
           </div>
         </div>
+        <!-- Card 2 Shawn Ballay -->
         <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-md-4 mt-lg-4 d-flex justify-content-center">
           <div class="card card-margin">
-            <div class="card-header no-border">
-              <h5 class="card-title">Steve Smith</h5>
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Shawn Ballay</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
             </div>
             <div class="card-body pt-0 pb-1">
               <div class="widget-49">
@@ -108,33 +120,36 @@
                     <span><img src="img/man.png" alt="" class="img-fluid"></span>
                   </div>
                   <div class="widget-49-meeting-info">
-                    <span class="widget-49-pro-title">Seasons: <span class="stat seasons">10</span></span>
-                    <span class="widget-49-meeting-time">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
                   </div>
                   <div class="widget-49-meeting-info">
-                    <span class="widget-49-pro-title">Championships: <span class="stat championships">3</span></span>
-                    <span class="widget-49-meeting-time">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
                   </div>
                 </div>
                 <div class="stats-wrapper">
-                  <ol class="widget-49-meeting-points mt-3">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
                     <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
                     <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
                     <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
                     <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
                   </ol>
-                  <ol class="widget-49-meeting-points mt-3 ms-4">
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
                     <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
                     <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
                     <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
                     <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
                   </ol>
-                  <ol class="widget-49-meeting-points mt-3 ms-4">
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
                     <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
                     <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
                     <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
                     <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
                   </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
                 </div>
                 <!-- <div class="widget-49-meeting-action">
                               <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
@@ -143,10 +158,15 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-lg-0 mt-xl-4 d-flex justify-content-center">
+        <!-- Card 3 Steve Smith -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-lg-0 mt-xl-0 mt-xxl-4 d-flex justify-content-center">
           <div class="card card-margin">
-            <div class="card-header no-border">
-              <h5 class="card-title">Donnie Irons</h5>
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Steve Smith</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
             </div>
             <div class="card-body pt-0 pb-1">
               <div class="widget-49">
@@ -155,33 +175,531 @@
                     <span><img src="img/man.png" alt="" class="img-fluid"></span>
                   </div>
                   <div class="widget-49-meeting-info">
-                    <span class="widget-49-pro-title">Seasons: <span class="stat seasons">10</span></span>
-                    <span class="widget-49-meeting-time">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
                   </div>
                   <div class="widget-49-meeting-info">
-                    <span class="widget-49-pro-title">Championships: <span class="stat championships">3</span></span>
-                    <span class="widget-49-meeting-time">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
                   </div>
                 </div>
                 <div class="stats-wrapper">
-                  <ol class="widget-49-meeting-points mt-3">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
                     <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
                     <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
                     <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
                     <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
                   </ol>
-                  <ol class="widget-49-meeting-points mt-3 ms-4">
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
                     <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
                     <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
                     <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
                     <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
                   </ol>
-                  <ol class="widget-49-meeting-points mt-3 ms-4">
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
                     <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
                     <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
                     <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
                     <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
                   </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 Donnie Irons -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Donnie Irons</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 Dante Nocito -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-md-0 mt-lg-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Dante Nocito</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 Steve Lloyd -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-lg-0 mt-xl-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Steve Lloyd</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 Joe Kane -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Joe Kane</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 Dom Flipp -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-md-0 mt-lg-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Dom Flipp</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 9 Cody Zwier -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-lg-0 mt-xl-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Cody Zwier</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 10 Dom Nocito -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Dom Nocito</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 11 Jimmy Wagner -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-md-0 mt-lg-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Jimmy Wagner</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
+                </div>
+                <!-- <div class="widget-49-meeting-action">
+                              <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                          </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 12 -->
+        <div class="col-md-6 col-lg-6 col-xxl-4 mt-0 mt-sm-0 mt-lg-0 mt-xl-0 d-flex justify-content-center">
+          <div class="card card-margin">
+            <div class="card-header no-border d-flex">
+              <h5 class="card-title m-0">Aaron Mackenzie</h5>
+              <div class="btn-group ms-auto" role="group">
+                <button class="btn p-1 btn-outline-primary card-toggle active">All-Time</button>
+                <button class="btn p-1 btn-outline-primary card-toggle">Current Year</button>
+              </div>
+            </div>
+            <div class="card-body pt-0 pb-1">
+              <div class="widget-49">
+                <div class="widget-49-title-wrapper">
+                  <div class="widget-49-date-primary">
+                    <span><img src="img/man.png" alt="" class="img-fluid"></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Seasons: <span class="stat seasons">10</span></span>
+                    <span class="widget-49-meeting-time featured-stat">Playoff Apps: <span class="stat playoff-appearances">7</span></span>
+                  </div>
+                  <div class="widget-49-meeting-info">
+                    <span class="widget-49-pro-title featured-stat">Championships: <span class="stat championships">3</span></span>
+                    <span class="widget-49-meeting-time ">Winning Pct: <span class="stat playoff-appearances">73.1%</span></span>
+                  </div>
+                </div>
+                <div class="stats-wrapper">
+                  <ol class="widget-49-meeting-points mt-2 stat-list">
+                    <li class="widget-49-meeting-item">Average PF: <span class="stat avg-points-for">123.12</span></li>
+                    <li class="widget-49-meeting-item"><span>Average PA: <span class="stat avg-points-against">128.90</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Playoff Rate: <span class="stat playoff-rate">70%</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Finals Apps: <span class="stat finals-appearances">4</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">Wins: <span class="stat wins">87</span></li>
+                    <li class="widget-49-meeting-item"><span>Losses: <span class="stat losses">45</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Last: <span class="stat times-last">2</span></span></li>
+                    <li class="widget-49-meeting-item"><span>DP Cut: <span class="stat drafted-cut">15</span></span></li>
+                  </ol>
+                  <ol class="widget-49-meeting-points mt-2 ms-4 stat-list">
+                    <li class="widget-49-meeting-item">KotH Victories: <span class="stat koth-victories">2</span></li>
+                    <li class="widget-49-meeting-item"><span>Handicap: <span class="stat golf-handicap">+15</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Outings Won: <span class="stat playoff-rate">1</span></span></li>
+                    <li class="widget-49-meeting-item"><span>Avg. Finish: <span class="stat finals-appearances">5th</span></span></li>
+                  </ol>
+                </div>
+                <div class="show-all text-center my-2">
+                  <button class="btn m-0 p-0 py-1 stats-dropdown-btn btn-outline-primary">Click to view stats breakdown <span class="down-arrow">▼</span></button>
                 </div>
                 <!-- <div class="widget-49-meeting-action">
                               <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
