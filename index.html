@@ -807,7 +807,7 @@
 
   <!-- Full stats breakdown -->
   <div class="full-breakdown bg-danger py-3">
-    <table class="table mx-auto">
+    <table class="table table-striped table-bordered nowrap mx-auto">
       <thead>
         <!-- MIGHT NEED TO USE SPANS FOR JS IMPLEMENTATION -->
         <th scope="col" class="main-head">Owner</th>
@@ -996,208 +996,219 @@
 
   <!-- Full stats Modal -->
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
+  <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content vertical-align-center modal-dialog-scrollable">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">League Overview</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <div class="full-breakdown bg-danger py-3">
-            <table class="table mx-auto">
-              <thead>
-                <!-- MIGHT NEED TO USE SPANS FOR JS IMPLEMENTATION -->
-                <th scope="col" class="main-head">Owner</th>
-                <th scope="col" class="main-head vertical">Seasons</th>
-                <th scope="col" class="main-head vertical">Championships</th>
-                <th scope="col" class="main-head vertical">Playoff Apps.</th>
-                <th scope="col" class="main-head vertical">KotH Victories</th>
-                <th scope="col" class="main-head vertical">Playoff Make Pct.</th>
-                <th scope="col" class="main-head vertical">Winning Pct.</th>
-                <th scope="col" class="main-head vertical">Avg. Points For</th>
-                <th scope="col" class="main-head vertical">Avg. Points Against</th>
-                <th scope="col" class="main-head vertical">Wins</th>
-                <th scope="col" class="main-head vertical">Losses</th>
-                <th scope="col" class="main-head vertical">"Lucky" Ws</th>
-                <th scope="col" class="main-head vertical">"Unlucky" Ls</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Dan George</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Shawn Ballay</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Steve Smith</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Donnie Irons</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Dante Nocito</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Steve Lloyd</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Joe Kane</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Dom Flipp</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Cody Zwier</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Jimmy Wagner</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-                <tr>
-                  <th scope="row">Aaron Mackenzie</th>
-                  <td class="owner-stat-seasons">8</td>
-                  <td class="owner-stat-championships">5</td>
-                  <td class="owner-stat-playoff-apps">6</td>
-                  <td class="owner-stat-koth">2</td>
-                  <td class="owner-stat-playoff-make-pct">58%</td>
-                  <td class="owner-stat-winning-pct">61%</td>
-                  <td class="owner-stat-avg-pf">125.19</td>
-                  <td class="owner-stat-avg-pa">122.19</td>
-                  <td class="owner-stat-wins">87</td>
-                  <td class="owner-stat-losses">61</td>
-                  <td class="owner-stat-luckyW">19</td>
-                  <td class="owner-stat-unluckyL">12</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="modal-body d-flex justify-content-center">
+          <table class="table table-striped table-bordered nowrap">
+            <thead class="top-headers">
+              <!-- MIGHT NEED TO USE SPANS FOR JS IMPLEMENTATION -->
+              <th scope="col" class="main-head">Owner</th>
+              <th scope="col" class="main-head vertical">Seasons</th>
+              <th scope="col" class="main-head vertical">Championships</th>
+              <th scope="col" class="main-head vertical">Playoff Apps.</th>
+              <th scope="col" class="main-head vertical">KotH Victories</th>
+              <th scope="col" class="main-head vertical">Playoff Make Pct.</th>
+              <th scope="col" class="main-head vertical">Winning Pct.</th>
+              <th scope="col" class="main-head vertical">Avg. PF</th>
+              <th scope="col" class="main-head vertical">Avg. PA</th>
+              <th scope="col" class="main-head vertical">Wins</th>
+              <th scope="col" class="main-head vertical">Losses</th>
+              <th scope="col" class="main-head vertical">"Lucky" Ws</th>
+              <th scope="col" class="main-head vertical">"Unlucky" Ls</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row modal-owner-name">Dan George</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Shawn Ballay</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Steve Smith</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Donnie Irons</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Dante Nocito</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Steve Lloyd</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Joe Kane</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Dom Flipp</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Cody Zwier</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Jimmy Wagner</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr>
+                <th scope="row modal-owner-name">Aaron Mackenzie</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+              <tr class="league-average">
+                <th scope="row modal-owner-name">League Average</th>
+                <td class="owner-stat-seasons">8</td>
+                <td class="owner-stat-championships">5</td>
+                <td class="owner-stat-playoff-apps">6</td>
+                <td class="owner-stat-koth">2</td>
+                <td class="owner-stat-playoff-make-pct">58%</td>
+                <td class="owner-stat-winning-pct">61%</td>
+                <td class="owner-stat-avg-pf">125.19</td>
+                <td class="owner-stat-avg-pa">122.19</td>
+                <td class="owner-stat-wins">87</td>
+                <td class="owner-stat-losses">61</td>
+                <td class="owner-stat-luckyW">19</td>
+                <td class="owner-stat-unluckyL">12</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </div>
-
+  
 
 
 

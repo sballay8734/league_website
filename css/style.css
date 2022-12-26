@@ -145,10 +145,15 @@ body {
   overflow-x: auto;
 }
 
+.modal-owner-name {
+  font-size: 3rem !important;
+}
+
 .main-head {
   font-size: 1rem;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .profile-dropdown {
@@ -178,23 +183,14 @@ body {
   margin: 0 auto;
 }
 
-/* .modal {
-  width: 1000px;
-  margin: 0 auto;
-} */
-
-.modal-dialogue {
-  width: 1000px;
+.modal-dialog {
+  height: 100vh;
 }
 
-.modal-content {
-  width: 800px;
-  margin: 0 auto;
+.league-average {
+  background-color: #17d1bd;
 }
 
-.modal {
-  display: flex;
-}
 
 /* ************************************************************************* */
 
