@@ -12,4 +12,3 @@ dropdownButton.addEventListener('click', () => {
     arrow.innerText = '▼'
   }
 });
-
