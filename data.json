@@ -1,32 +1,33 @@
 {
-  "leagueStats": [ 
+  "leagueStats": [
     {
       "ownerName": "shawnB",
-      "pointsFor": 1648.94,
-      "wins": 12,
-      "losses": 3,
-      "ties": 0
+      "2016": {
+        "pointsFor": 1698,
+        "pointsAgainst": 1587,
+        "wins": 12,
+        "losses": 3,
+        "finishPlace": 1,
+        "madePlayoffs": true,
+        "madeFinals": true,
+        "finishedLast": false,
+        "waiverMoves": 12,
+        "trades": 2,
+        "pointsLeftOnBench": 112,
+
+
+        "unluckyLosses": "Losses where you scored more than league avg",
+        "luckyWins": "Wins where you scored below league avg",
+        "draftedPlayersCut": 2
+
+      },
+      "2017": {},
+      "2018": {},
+      "2019": {},
+      "2020": {},
+      "2021": {},
+      "2022": {}
     },
-    {
-      "ownerName": "steveS",
-      "pointsFor": 1804.00,
-      "wins": 8,
-      "losses": 6,
-      "ties": 0
-    }, 
-    {
-      "ownerName": "donI",
-      "pointsFor": 1567.62,
-      "wins": 5,
-      "losses": 9,
-      "ties": 0
-    }, 
-    {
-      "ownerName": "aaronM",
-      "pointsFor": 1622.72,
-      "wins": 6,
-      "losses": 8,
-      "ties": 0
-    }
+    {}
   ]
 }
