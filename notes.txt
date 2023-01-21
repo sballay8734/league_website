@@ -1,0 +1,4 @@
+1. Close game wins/losses (separated by 5 points)
+2. finishPlace should always be based on regular season (NOT LOSER PLAYOFF)
+
+3. Margin of defeat/victory would be controls
