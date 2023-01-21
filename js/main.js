@@ -1,3 +1,9 @@
+// import data from '../data.json' assert {type: 'JSON'};
+// console.log(data)
+
+fetch('./data.json')
+  .then((response) => console.log(response.json()));
+
 // Stats breakdown dropdown ****************************************************
 let profileButton = document.querySelector('.profile-dropdown')
 let dropdownButton = document.querySelector('.stats-dropdown-btn');

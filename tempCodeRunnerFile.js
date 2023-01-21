@@ -1,17 +1,3 @@
-const { Client } = require('espn-fantasy-football-api/node');
-const { Team } = require('espn-fantasy-football-api/node');
-const { BoxScore } = require('espn-fantasy-football-api/node');
-const { BaseObject } = require('espn-fantasy-football-api/node');
+import data from '.data.json'
 
-const leagueId = 1049926;
-
-
-
-
-
-
-
-
-const myClient = new Client({ leagueId: 1049926 });
-myClient.getLeagueInfo({seasonId: 2022})
-.then((data => console.log(data)))
+console.log(data)
