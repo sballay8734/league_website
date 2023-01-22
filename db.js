@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb')
 
 let dbConnection
 
-modules.exports = {
+module.exports = {
   connectToDb: (callBack) => {
     MongoClient.connect('mongodb://localhost:27017/leagueWebsite')
 
@@ -19,3 +19,4 @@ modules.exports = {
   getDb: () => dbConnection
 
 }
+

@@ -18,22 +18,19 @@ connectToDb((error) => {
 })
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-// routes
-app.get('/ownerStats', (req, res) => {
-  let owners = [];
+// routes WORKING!!
+app.get('/ownerStats/:ownerName', (req, res) => {
 
   db.collection('ownerStats')
-    .find()
-    .forEach(owner => owners.push(owner))
+    .findOne( { ownerName: req.params.ownerName } )
 
-    .then(() => {
-      res.status(200).json(owners)
+    .then((owner) => {
+      res.status(200).json(owner[2014].wins)
     })
     .catch((error) => {
       res.status(500).send('Error: ' + error)
     })
 
-  res.json({message: 'Welcome to the API!'})
 });
 
 
@@ -41,17 +38,3 @@ app.get('/ownerStats', (req, res) => {
 
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-// // Stats breakdown dropdown ****************************************************
-// let profileButton = document.querySelector('.profile-dropdown')
-// let dropdownButton = document.querySelector('.stats-dropdown-btn');
-// let arrow = document.querySelector('.down-arrow')
-
-// dropdownButton.addEventListener('click', () => {
-//   profileButton.classList.toggle('is-visible');
-//   // Need below to toggle
-//   if (arrow.innerText === '▼') {
-//     arrow.innerText = '▲';
-//   } else {
-//     arrow.innerText = '▼'
-//   }
-// });
