@@ -2,8 +2,7 @@
   "name": "league_website",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
-  "type": "module",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +20,9 @@
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
     "espn-fantasy-football-api": "^0.16.1",
+    "express": "^4.18.2",
     "lodash": "^4.17.21",
+    "mongodb": "^4.13.0",
     "node-fetch": "^3.3.0"
   }
 }

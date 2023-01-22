@@ -3,7 +3,7 @@
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 let leagueMembers = {
-  teamOne: 
+  shawnB: 
     {
       pointsFor: 1648.94,
       wins: 12,
@@ -32,6 +32,8 @@ let leagueMembers = {
       ties: 0,
     },
 }
+
+console.log(leagueMembers.shawnB.pointsFor)
 
 // should always add up to 2 (if two games where played)
 // teamOne.teamTwo + teamTwo.teamOne === 2;

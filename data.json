@@ -1,6 +1,6 @@
 {
-  "leagueStats": {
-    "shawnB": {
+"leagueStats": {
+  "shawnB": {
       "2014": {
         "participated": true,
         "pointsFor": 1744,
@@ -289,8 +289,8 @@
         "goodStarts": "value",
         "badStarts": "value"
       }
-    },
-    "steveS": {
+  },
+  "steveS": {
       "2014": {
         "participated": true,
         "pointsFor": 1475,
@@ -579,8 +579,8 @@
         "goodStarts": "value",
         "badStarts": "value"
       }
-    },
-    "donI": {
+  },
+  "donI": {
       "2014": {
         "participated": true,
         "pointsFor": 1533,
@@ -869,6 +869,6 @@
         "goodStarts": "value",
         "badStarts": "value"
       }
-    }
+  }
   }
 }
