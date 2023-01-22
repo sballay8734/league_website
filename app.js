@@ -1,3 +1,5 @@
+// run "nodemon app" in terminal to start app
+
 const { walkBlockDeclarations } = require('@vue/compiler-core');
 const express = require('express');
 const { connectToDb, getDb } = require('./db')

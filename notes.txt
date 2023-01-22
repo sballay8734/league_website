@@ -2,3 +2,9 @@
 2. finishPlace should always be based on regular season (NOT LOSER PLAYOFF)
 
 3. Margin of defeat/victory would be controls
+
+
+
+
+
+* Run 'nodemon app' in terminal to start app
